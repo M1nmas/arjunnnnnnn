@@ -1,16 +1,51 @@
-# React + Vite
+# 🌊 Ocean Theme Birthday Wish
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An immersive, interactive 3D birthday experience built with **React Three Fiber**.
 
-Currently, two official plugins are available:
+![Ocean Theme Preview](https://via.placeholder.com/800x400?text=Ocean+Theme+Birthday+Preview)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **🐠 Interactive "Dive In" Experience**: The scene and music are triggered by a user interaction, ensuring a seamless start.
+- **🎈 3D Floating Bubbles**: Custom-styled 3D balloons that float like bubbles in an underwater current.
+- **🎵 Atmospheric Audio**: Plays a celebration song upon entry.
+- **🌊 Deep Ocean Atmosphere**:
+  - Custom fog and lighting for depth.
+  - "Night" environment preset for beautiful reflections.
+  - Dynamic background gradients.
+- **🎨 Glassmorphism UI**: Modern, frosted-glass styling for the wishes card.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **[React](https://react.dev/)**: UI Library.
+- **[React Three Fiber (R3F)](https://docs.pmnd.rs/react-three-fiber/)**: 3D Renderer for React.
+- **[Drei](https://github.com/pmndrs/drei)**: Useful helpers for R3F (OrbitControls, Text3D, Environment).
+- **[Vite](https://vitejs.dev/)**: Fast build tool and dev server.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+1.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
+
+2.  **Run Development Server**:
+    ```bash
+    npm run dev
+    ```
+
+3.  **Build for Production**:
+    ```bash
+    npm run build
+    ```
+
+## 📂 Project Structure
+
+- `src/components/Experience.jsx`: Main 3D scene (Lights, Controls).
+- `src/components/Overlay.jsx`: HTML UI layer (Button, Wishes Card).
+- `src/components/Balloons.jsx`: Logic for generating and animating 3D balloons.
+- `src/components/Text3D.jsx`: 3D Text rendering.
+- `public/birthday_song.mp3`: Background audio file.
+
+---
+Made with 💙 and React Three Fiber.
