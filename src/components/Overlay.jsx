@@ -18,45 +18,7 @@ const Overlay = ({ started, setStarted }) => {
         alignItems: "center",
       }}
     >
-      {started && (
-        <div
-            style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                background: "rgba(255, 255, 255, 0.1)",
-                backdropFilter: "blur(10px)",
-                padding: "3rem",
-                borderRadius: "20px",
-                textAlign: "center",
-                pointerEvents: "auto",
-                boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
-                border: "1px solid rgba(255, 255, 255, 0.18)",
-                maxWidth: "80%",
-                width: "500px",
-            }}
-        >
-            <h1 style={{ 
-              color: "#4cc9f0", 
-              marginBottom: "1.5rem",
-              fontFamily: "'Outfit', sans-serif",
-              fontSize: "3rem",
-              textShadow: "0 0 10px rgba(76, 201, 240, 0.5)"
-            }}>
-              Happy Birthday! 🌊
-            </h1>
-            <p style={{ 
-              fontSize: "1.5rem", 
-              color: "#e0fbfc",
-              lineHeight: "1.6",
-              fontFamily: "'Inter', sans-serif",
-            }}>
-                Wishing you a day as deep and wonderful as the ocean. <br/>
-                May your year be full of new adventures!
-            </p>
-        </div>
-      )}
+
 
       {!started && (
         <div style={{ pointerEvents: "auto", marginBottom: "20%" }}>

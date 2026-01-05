@@ -1,11 +1,13 @@
 import { OrbitControls, Environment } from "@react-three/drei";
-import { Title } from "./Text3D";
-import { Balloons } from "./Balloons";
+
+
+import { Bubbles } from "./Bubbles";
+import { TypingText } from "./TypingText";
 
 export const Experience = ({ started }) => {
   return (
     <>
-      <OrbitControls makeDefault enableZoom={false} autoRotate={started} autoRotateSpeed={0.5} />
+      <OrbitControls makeDefault enableZoom={false} enablePan={false} />
       
       {/* Lights - Ocean Mood */}
       <ambientLight intensity={0.5} />
@@ -16,8 +18,13 @@ export const Experience = ({ started }) => {
       {/* Content - Only show when started (or animate in) */}
       {started && (
         <group position={[0, 0, 0]}>
-          <Title />
-          <Balloons />
+
+
+          <Bubbles />
+          <TypingText 
+            title="Happy Birthday My Friend!" 
+            subtitle={"May God bless you with endless joy and peace. May His light guide your path always."}
+          />
         </group>
       )}
 
